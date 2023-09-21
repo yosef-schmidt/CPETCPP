@@ -27,7 +27,7 @@ int main() {
     std::getline(std::cin, nomeAluno);
 
     std::string dataNascimentoStr;
-    std::cout << "Digite a data de nascimento completa do aluno (YYYY-MM-DD): ";
+    std::cout << "Digite a data de nascimento completa do aluno (DD-MM-YYYY): ";
     std::cin >> dataNascimentoStr;
 
     std::string dataAtividadeStr;
@@ -41,7 +41,7 @@ int main() {
     std::istringstream dataAtividadeStream(dataAtividadeStr);
 
     // Use std::get_time para converter as datas
-    dataNascimentoStream >> std::get_time(&dataNascimento, "%Y-%m-%d");
+    dataNascimentoStream >> std::get_time(&dataNascimento, "%d-%m-%Y");
     dataAtividadeStream >> std::get_time(&dataAtividade, "%d-%m-%Y");
 
     // Verifique se a conversão foi bem-sucedida
