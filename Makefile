@@ -1,7 +1,9 @@
-all: myprogram idaderomano
+all: areaquadrado idaderomano carroecasa
 
-myprogram: main.cpp
-	g++ -o myprogram main.cpp
+myprogram: areaquadrado.cpp
+	g++ -o areaquadrado areaquadrado.cpp
 
 idaderomano: idaderomano.cpp
 	g++ -o idaderomano idaderomano.cpp
+carroecasa: carroecasa.cpp
+	g++ -0 carroecasa carroecasa.cpp
